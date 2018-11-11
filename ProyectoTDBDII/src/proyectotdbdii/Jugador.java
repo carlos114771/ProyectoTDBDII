@@ -5,6 +5,8 @@
  */
 package proyectotdbdii;
 
+import java.util.Date;
+
 /**
  *
  * @author Usuario Dell
@@ -14,7 +16,7 @@ public class Jugador extends Persona{
     public Jugador() {
     }
 
-    public Jugador(int id, String nombre, String apellido, String fecha_nacimiento) {
+    public Jugador(int id, String nombre, String apellido, Date fecha_nacimiento) {
         super(id, nombre, apellido, fecha_nacimiento);
     }
 
@@ -42,11 +44,11 @@ public class Jugador extends Persona{
         this.apellido = apellido;
     }
 
-    public String getFecha_nacimiento() {
+    public Date getFecha_nacimiento() {
         return fecha_nacimiento;
     }
 
-    public void setFecha_nacimiento(String fecha_nacimiento) {
+    public void setFecha_nacimiento(Date fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
     
