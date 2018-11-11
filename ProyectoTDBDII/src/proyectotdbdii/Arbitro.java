@@ -16,8 +16,8 @@ public class Arbitro extends Persona {
     public Arbitro() {
     }
 
-    public Arbitro(int id, String nombre, String apellido, Date fecha_nacimiento) {
-        super(id, nombre, apellido, fecha_nacimiento);
+    public Arbitro(int id, String nombre, String apellido, String genero, Date fecha_nacimiento) {
+        super(id, nombre, apellido, genero, fecha_nacimiento);
     }
 
     public int getId() {
@@ -44,6 +44,14 @@ public class Arbitro extends Persona {
         this.apellido = apellido;
     }
 
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
     public Date getFecha_nacimiento() {
         return fecha_nacimiento;
     }
@@ -51,6 +59,7 @@ public class Arbitro extends Persona {
     public void setFecha_nacimiento(Date fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
-    
+
+  
 
 }

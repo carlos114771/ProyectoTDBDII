@@ -16,8 +16,8 @@ public class Entrenadores extends Persona {
     public Entrenadores() {
     }
 
-    public Entrenadores(int id, String nombre, String apellido, Date fecha_nacimiento) {
-        super(id, nombre, apellido, fecha_nacimiento);
+    public Entrenadores(int id, String nombre, String apellido, String genero, Date fecha_nacimiento) {
+        super(id, nombre, apellido, genero, fecha_nacimiento);
     }
 
     public int getId() {
@@ -42,6 +42,14 @@ public class Entrenadores extends Persona {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 
     public Date getFecha_nacimiento() {

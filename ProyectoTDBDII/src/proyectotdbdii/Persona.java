@@ -12,18 +12,21 @@ import java.util.Date;
  * @author Usuario Dell
  */
 public class Persona {
+
     int id;
     String nombre;
     String apellido;
+    String genero;
     Date fecha_nacimiento;
 
     public Persona() {
     }
 
-    public Persona(int id, String nombre, String apellido, Date fecha_nacimiento) {
+    public Persona(int id, String nombre, String apellido, String genero, Date fecha_nacimiento) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.genero = genero;
         this.fecha_nacimiento = fecha_nacimiento;
     }
 
@@ -51,6 +54,14 @@ public class Persona {
         this.apellido = apellido;
     }
 
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
     public Date getFecha_nacimiento() {
         return fecha_nacimiento;
     }
@@ -58,6 +69,5 @@ public class Persona {
     public void setFecha_nacimiento(Date fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
-    
-    
+
 }
