@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package proyectotdbdii;
 
 import java.util.HashMap;
@@ -12,15 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-/**
- *
- * @author Usuario Dell
- */
 public class Redis {
 
-    /**
-     * @param args the command line arguments
-     */
     public static Map<String, String> putMap(Account account) {
         Map<String, String> hash = new HashMap<>();
         hash.put("username", account.getUsserName());
