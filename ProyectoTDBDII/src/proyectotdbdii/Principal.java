@@ -7,7 +7,6 @@ public class Principal extends javax.swing.JFrame {
 
     public Principal() {
         initComponents();
-        System.out.println("HELLO WORLD");
     }
 
     @SuppressWarnings("unchecked")
